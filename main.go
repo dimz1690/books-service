@@ -17,6 +17,7 @@ func main() {
 	// Routes
 	app.Get("/hello", hello)
 	app.Get("/book", book)
+	app.Get("/super", super)
 
 	// 404 Handler
 	app.Use(func(c *fiber.Ctx) error {
@@ -34,4 +35,8 @@ func hello(c *fiber.Ctx) error {
 
 func book(c *fiber.Ctx) error {
 	return c.SendString("I read this book for you 123!")
+}
+
+func super(c *fiber.Ctx) error {
+	return c.SendString("I read this super!")
 }
