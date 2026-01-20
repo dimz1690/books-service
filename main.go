@@ -39,7 +39,7 @@ func book(c *fiber.Ctx) error {
 }
 
 func super(c *fiber.Ctx) error {
-	return c.SendString("I read this super!")
+	return c.SendString("I read this super 1234!")
 }
 
 func coffee(c *fiber.Ctx) error {
