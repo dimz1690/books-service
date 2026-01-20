@@ -18,6 +18,7 @@ func main() {
 	app.Get("/hello", hello)
 	app.Get("/book", book)
 	app.Get("/super", super)
+	app.Get("/coffee", coffee)
 
 	// 404 Handler
 	app.Use(func(c *fiber.Ctx) error {
@@ -39,4 +40,8 @@ func book(c *fiber.Ctx) error {
 
 func super(c *fiber.Ctx) error {
 	return c.SendString("I read this super!")
+}
+
+func coffee(c *fiber.Ctx) error {
+	return c.SendString("I made delicious coffee!")
 }
