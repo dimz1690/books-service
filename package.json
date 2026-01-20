@@ -1,5 +1,5 @@
 {
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"dependencies": {
 		"changelog": "^1.4.2",
 		"conventional-changelog-cli": "^5.0.0"
